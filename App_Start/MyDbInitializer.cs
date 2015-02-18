@@ -21,18 +21,23 @@ namespace wwwdrivesafe.App_Start
 								   RoleStore<IdentityRole>(context));
 
 			string name = "SiteAdmin";
-			string password = "123456";
-
+			string password = "Password1!";
+			string email = "nhan@drivesafe.com";
 			
 			//Create Role Admin if it does not exist
 			if (!RoleManager.RoleExists(name))
 			{
 				var roleresult = RoleManager.Create(new IdentityRole(name));
+				RoleManager.Create(new IdentityRole("BusinessAdmin"));
+				RoleManager.Create(new IdentityRole("GroupAdmin"));
+				RoleManager.Create(new IdentityRole("Driver"));
+
 			}
 
 			//Create User=Admin with password=123456
 			var user = new ApplicationUser();
-			user.UserName = name;
+			user.UserName = email;
+			user.Email = email;
 			var adminresult = UserManager.Create(user, password);  
 
 			//Add User Admin to Role Admin
@@ -40,6 +45,9 @@ namespace wwwdrivesafe.App_Start
 			{
 				var result = UserManager.AddToRole(user.Id, name);
 			}
+
+
+
 			base.Seed(context);
 		}
 	}

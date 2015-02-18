@@ -53,3 +53,6 @@ C:\Users\Nhan\documents\visual studio 2013\Projects\wwwdrivesafe\wwwdrivesafe\bi
 C:\Users\Nhan\documents\visual studio 2013\Projects\wwwdrivesafe\wwwdrivesafe\obj\Debug\wwwdrivesafe.dll
 C:\Users\Nhan\documents\visual studio 2013\Projects\wwwdrivesafe\wwwdrivesafe\obj\Debug\wwwdrivesafe.pdb
 C:\Users\Nhan\documents\visual studio 2013\Projects\wwwdrivesafe\wwwdrivesafe\obj\Debug\wwwdrivesafe.csprojResolveAssemblyReference.cache
+C:\Users\Nhan\documents\visual studio 2013\Projects\wwwdrivesafe\wwwdrivesafe\obj\Debug\wwwdrivesafe.Migrations.InitialCreate.resources
+C:\Users\Nhan\documents\visual studio 2013\Projects\wwwdrivesafe\wwwdrivesafe\obj\Debug\wwwdrivesafe.csproj.GenerateResource.Cache
+C:\Users\Nhan\documents\visual studio 2013\Projects\wwwdrivesafe\wwwdrivesafe\obj\Debug\wwwdrivesafe.Migrations.initial_models.resources
