@@ -1,0 +1,58 @@
+﻿@model wwwdrivesafe.Models.Session_Activities
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Session_Activities</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Activity_Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Activity_Status)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ActivityType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ActivityType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Confidence)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Confidence)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Is_Driving)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Is_Driving)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Created_Date)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Created_Date)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

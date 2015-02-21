@@ -9,7 +9,7 @@ using wwwdrivesafe.Models;
 
 namespace wwwdrivesafe.App_Start
 {
-	public class MyDbInitializer : DropCreateDatabaseAlways<ApplicationDbContext>
+	public class MyDbInitializer : CreateDatabaseIfNotExists<ApplicationDbContext>
 	{
 		protected override void Seed(ApplicationDbContext context)
 		{

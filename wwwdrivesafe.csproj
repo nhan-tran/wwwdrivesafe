@@ -163,7 +163,9 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\Location_LogController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\Session_ActivitiesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -246,6 +248,16 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Location_Log\Create.cshtml" />
+    <Content Include="Views\Location_Log\Delete.cshtml" />
+    <Content Include="Views\Location_Log\Details.cshtml" />
+    <Content Include="Views\Location_Log\Edit.cshtml" />
+    <Content Include="Views\Location_Log\Index.cshtml" />
+    <Content Include="Views\Session_Activities\Create.cshtml" />
+    <Content Include="Views\Session_Activities\Delete.cshtml" />
+    <Content Include="Views\Session_Activities\Details.cshtml" />
+    <Content Include="Views\Session_Activities\Edit.cshtml" />
+    <Content Include="Views\Session_Activities\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
