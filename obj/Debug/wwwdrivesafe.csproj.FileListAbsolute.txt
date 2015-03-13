@@ -62,3 +62,5 @@ C:\Users\Nhan\documents\visual studio 2013\Projects\wwwdrivesafe\wwwdrivesafe\bi
 C:\Users\Nhan\documents\visual studio 2013\Projects\wwwdrivesafe\wwwdrivesafe\bin\System.Net.Http.Formatting.xml
 C:\Users\Nhan\documents\visual studio 2013\Projects\wwwdrivesafe\wwwdrivesafe\bin\System.Web.Http.xml
 C:\Users\Nhan\documents\visual studio 2013\Projects\wwwdrivesafe\wwwdrivesafe\bin\System.Web.Http.WebHost.xml
+C:\Users\Nhan\documents\visual studio 2013\Projects\wwwdrivesafe\wwwdrivesafe\obj\Debug\wwwdrivesafe.Migrations.changeLocationLogToBeSameAsAndroid.resources
+C:\Users\Nhan\documents\visual studio 2013\Projects\wwwdrivesafe\wwwdrivesafe\obj\Debug\wwwdrivesafe.Migrations.readdLocationTime.resources

@@ -14,10 +14,11 @@ namespace wwwdrivesafe.Models
 		public double Speed { get; set; }
 		public double Latitude { get; set; }
 		public double Longitude { get; set; }
-		public DateTime Location_Time { get; set; }
-		public int User_Id { get; set; }
+		public string Location_Time { get; set; }
+		public string User_Id { get; set; }
 		public bool Synced { get; set; }
 		public double Bearing { get; set; }
 		public double Accuracy { get; set; }
+		public DateTime SyncDate { get; set; }
 	}
 }

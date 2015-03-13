@@ -191,6 +191,14 @@
     <Compile Include="Migrations\201502180204376_initial_models.Designer.cs">
       <DependentUpon>201502180204376_initial_models.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201503130134598_changeLocationLogToBeSameAsAndroid.cs" />
+    <Compile Include="Migrations\201503130134598_changeLocationLogToBeSameAsAndroid.Designer.cs">
+      <DependentUpon>201503130134598_changeLocationLogToBeSameAsAndroid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201503130137490_readdLocationTime.cs" />
+    <Compile Include="Migrations\201503130137490_readdLocationTime.Designer.cs">
+      <DependentUpon>201503130137490_readdLocationTime.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Driver.cs" />
@@ -289,6 +297,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201502180204376_initial_models.resx">
       <DependentUpon>201502180204376_initial_models.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201503130134598_changeLocationLogToBeSameAsAndroid.resx">
+      <DependentUpon>201503130134598_changeLocationLogToBeSameAsAndroid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201503130137490_readdLocationTime.resx">
+      <DependentUpon>201503130137490_readdLocationTime.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
