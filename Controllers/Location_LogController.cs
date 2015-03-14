@@ -17,7 +17,8 @@ namespace wwwdrivesafe.Controllers
         // GET: Location_Log
         public ActionResult Index()
         {
-            return View(db.Location_Logs.ToList());
+            
+			return View(db.Location_Logs.ToList());
         }
 
         // GET: Location_Log/Details/5

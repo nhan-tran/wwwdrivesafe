@@ -79,6 +79,7 @@ namespace wwwdrivesafe.Controllers
                 return BadRequest(ModelState);
             }
 
+			location_Log.SyncDate = DateTime.Now;
             db.Location_Logs.Add(location_Log);
             db.SaveChanges();
 
