@@ -64,3 +64,4 @@ C:\Users\Nhan\documents\visual studio 2013\Projects\wwwdrivesafe\wwwdrivesafe\bi
 C:\Users\Nhan\documents\visual studio 2013\Projects\wwwdrivesafe\wwwdrivesafe\bin\System.Web.Http.WebHost.xml
 C:\Users\Nhan\documents\visual studio 2013\Projects\wwwdrivesafe\wwwdrivesafe\obj\Debug\wwwdrivesafe.Migrations.changeLocationLogToBeSameAsAndroid.resources
 C:\Users\Nhan\documents\visual studio 2013\Projects\wwwdrivesafe\wwwdrivesafe\obj\Debug\wwwdrivesafe.Migrations.readdLocationTime.resources
+C:\Users\Nhan\documents\visual studio 2013\Projects\wwwdrivesafe\wwwdrivesafe\obj\Debug\wwwdrivesafe.Migrations.add_ID_Android.resources

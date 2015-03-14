@@ -20,5 +20,6 @@ namespace wwwdrivesafe.Models
 		public double Bearing { get; set; }
 		public double Accuracy { get; set; }
 		public DateTime SyncDate { get; set; }
+		public int _ID_Android { get; set; }
 	}
 }
