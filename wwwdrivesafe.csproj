@@ -180,6 +180,7 @@
     <Compile Include="Controllers\Location_Log_Sync_Controller.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\Session_ActivitiesController.cs" />
+    <Compile Include="Controllers\ViewPermissionsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -203,6 +204,14 @@
     <Compile Include="Migrations\201503130202533_add_ID_Android.Designer.cs">
       <DependentUpon>201503130202533_add_ID_Android.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201503142108498_add_ViewPermission_model_Drop_Driver_model.cs" />
+    <Compile Include="Migrations\201503142108498_add_ViewPermission_model_Drop_Driver_model.Designer.cs">
+      <DependentUpon>201503142108498_add_ViewPermission_model_Drop_Driver_model.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201503142113433_add_ViewPermission_model_Drop_Driver_model_DbSet.cs" />
+    <Compile Include="Migrations\201503142113433_add_ViewPermission_model_Drop_Driver_model_DbSet.Designer.cs">
+      <DependentUpon>201503142113433_add_ViewPermission_model_Drop_Driver_model_DbSet.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Driver.cs" />
@@ -210,6 +219,7 @@
     <Compile Include="Models\Location_Log.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Session_Activities.cs" />
+    <Compile Include="Models\ViewPermission.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -284,6 +294,11 @@
     <Content Include="Views\Session_Activities\Details.cshtml" />
     <Content Include="Views\Session_Activities\Edit.cshtml" />
     <Content Include="Views\Session_Activities\Index.cshtml" />
+    <Content Include="Views\ViewPermissions\Create.cshtml" />
+    <Content Include="Views\ViewPermissions\Delete.cshtml" />
+    <Content Include="Views\ViewPermissions\Details.cshtml" />
+    <Content Include="Views\ViewPermissions\Edit.cshtml" />
+    <Content Include="Views\ViewPermissions\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -310,6 +325,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201503130202533_add_ID_Android.resx">
       <DependentUpon>201503130202533_add_ID_Android.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201503142108498_add_ViewPermission_model_Drop_Driver_model.resx">
+      <DependentUpon>201503142108498_add_ViewPermission_model_Drop_Driver_model.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201503142113433_add_ViewPermission_model_Drop_Driver_model_DbSet.resx">
+      <DependentUpon>201503142113433_add_ViewPermission_model_Drop_Driver_model_DbSet.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

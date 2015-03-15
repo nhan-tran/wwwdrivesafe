@@ -65,3 +65,5 @@ C:\Users\Nhan\documents\visual studio 2013\Projects\wwwdrivesafe\wwwdrivesafe\bi
 C:\Users\Nhan\documents\visual studio 2013\Projects\wwwdrivesafe\wwwdrivesafe\obj\Debug\wwwdrivesafe.Migrations.changeLocationLogToBeSameAsAndroid.resources
 C:\Users\Nhan\documents\visual studio 2013\Projects\wwwdrivesafe\wwwdrivesafe\obj\Debug\wwwdrivesafe.Migrations.readdLocationTime.resources
 C:\Users\Nhan\documents\visual studio 2013\Projects\wwwdrivesafe\wwwdrivesafe\obj\Debug\wwwdrivesafe.Migrations.add_ID_Android.resources
+C:\Users\Nhan\documents\visual studio 2013\Projects\wwwdrivesafe\wwwdrivesafe\obj\Debug\wwwdrivesafe.Migrations.add_ViewPermission_model_Drop_Driver_model.resources
+C:\Users\Nhan\documents\visual studio 2013\Projects\wwwdrivesafe\wwwdrivesafe\obj\Debug\wwwdrivesafe.Migrations.add_ViewPermission_model_Drop_Driver_model_DbSet.resources

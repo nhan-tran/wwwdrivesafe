@@ -35,5 +35,6 @@ namespace wwwdrivesafe.Models
 		public DbSet<Driver> Drivers { get; set; }
 		public DbSet<Location_Log> Location_Logs { get; set; }
 		public DbSet<Session_Activities> Session_Activites { get; set; }
+		public DbSet<ViewPermission> ViewPermissions { get; set; }
 	}
 }

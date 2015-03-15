@@ -79,6 +79,8 @@ namespace wwwdrivesafe.Controllers
                 return BadRequest(ModelState);
             }
 
+			// check if record already exists before inserting
+
 			location_Log.SyncDate = DateTime.Now;
             db.Location_Logs.Add(location_Log);
             db.SaveChanges();

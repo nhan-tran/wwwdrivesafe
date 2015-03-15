@@ -11,108 +11,107 @@ using wwwdrivesafe.Models;
 namespace wwwdrivesafe.Controllers
 {
 	[Authorize]
-    public class Location_LogController : Controller
+    public class ViewPermissionsController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
 
-        // GET: Location_Log
+        // GET: ViewPermissions
         public ActionResult Index()
         {
-            
-			return View(db.Location_Logs.ToList());
+            return View(db.ViewPermissions.ToList());
         }
 
-        // GET: Location_Log/Details/5
+        // GET: ViewPermissions/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Location_Log location_Log = db.Location_Logs.Find(id);
-            if (location_Log == null)
+            ViewPermission viewPermission = db.ViewPermissions.Find(id);
+            if (viewPermission == null)
             {
                 return HttpNotFound();
             }
-            return View(location_Log);
+            return View(viewPermission);
         }
 
-        // GET: Location_Log/Create
+        // GET: ViewPermissions/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: Location_Log/Create
+        // POST: ViewPermissions/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Created_Date,Speed,Latitude,Longitude,Location_Time,User_Id,Synced,Bearing,Accuracy")] Location_Log location_Log)
+        public ActionResult Create([Bind(Include = "ID,DsAccountId,AndroidUserId")] ViewPermission viewPermission)
         {
             if (ModelState.IsValid)
             {
-                db.Location_Logs.Add(location_Log);
+                db.ViewPermissions.Add(viewPermission);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            return View(location_Log);
+            return View(viewPermission);
         }
 
-        // GET: Location_Log/Edit/5
+        // GET: ViewPermissions/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Location_Log location_Log = db.Location_Logs.Find(id);
-            if (location_Log == null)
+            ViewPermission viewPermission = db.ViewPermissions.Find(id);
+            if (viewPermission == null)
             {
                 return HttpNotFound();
             }
-            return View(location_Log);
+            return View(viewPermission);
         }
 
-        // POST: Location_Log/Edit/5
+        // POST: ViewPermissions/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Created_Date,Speed,Latitude,Longitude,Location_Time,User_Id,Synced,Bearing,Accuracy")] Location_Log location_Log)
+        public ActionResult Edit([Bind(Include = "ID,DsAccountId,AndroidUserId")] ViewPermission viewPermission)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(location_Log).State = EntityState.Modified;
+                db.Entry(viewPermission).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(location_Log);
+            return View(viewPermission);
         }
 
-        // GET: Location_Log/Delete/5
+        // GET: ViewPermissions/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Location_Log location_Log = db.Location_Logs.Find(id);
-            if (location_Log == null)
+            ViewPermission viewPermission = db.ViewPermissions.Find(id);
+            if (viewPermission == null)
             {
                 return HttpNotFound();
             }
-            return View(location_Log);
+            return View(viewPermission);
         }
 
-        // POST: Location_Log/Delete/5
+        // POST: ViewPermissions/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Location_Log location_Log = db.Location_Logs.Find(id);
-            db.Location_Logs.Remove(location_Log);
+            ViewPermission viewPermission = db.ViewPermissions.Find(id);
+            db.ViewPermissions.Remove(viewPermission);
             db.SaveChanges();
             return RedirectToAction("Index");
         }
