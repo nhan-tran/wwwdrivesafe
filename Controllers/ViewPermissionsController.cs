@@ -7,6 +7,9 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using wwwdrivesafe.Models;
+using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.Owin;
+using Microsoft.Owin.Security;
 
 namespace wwwdrivesafe.Controllers
 {
@@ -14,11 +17,26 @@ namespace wwwdrivesafe.Controllers
     public class ViewPermissionsController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
+		private ApplicationUserManager _userManager;
 
+		public ApplicationUserManager UserManager
+		{
+			get
+			{
+				return _userManager ?? HttpContext.GetOwinContext().GetUserManager<ApplicationUserManager>();
+			}
+			private set
+			{
+				_userManager = value;
+			}
+		}
+		
         // GET: ViewPermissions
         public ActionResult Index()
         {
-            return View(db.ViewPermissions.ToList());
+			var user = UserManager.Users.First();
+			
+            return View(db.ViewPermissions.Where(x => x.DsAccountId == user.Id).ToList());
         }
 
         // GET: ViewPermissions/Details/5

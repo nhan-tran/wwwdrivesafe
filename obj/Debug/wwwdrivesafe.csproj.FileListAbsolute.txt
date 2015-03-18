@@ -67,3 +67,4 @@ C:\Users\Nhan\documents\visual studio 2013\Projects\wwwdrivesafe\wwwdrivesafe\ob
 C:\Users\Nhan\documents\visual studio 2013\Projects\wwwdrivesafe\wwwdrivesafe\obj\Debug\wwwdrivesafe.Migrations.add_ID_Android.resources
 C:\Users\Nhan\documents\visual studio 2013\Projects\wwwdrivesafe\wwwdrivesafe\obj\Debug\wwwdrivesafe.Migrations.add_ViewPermission_model_Drop_Driver_model.resources
 C:\Users\Nhan\documents\visual studio 2013\Projects\wwwdrivesafe\wwwdrivesafe\obj\Debug\wwwdrivesafe.Migrations.add_ViewPermission_model_Drop_Driver_model_DbSet.resources
+C:\Users\Nhan\documents\visual studio 2013\Projects\wwwdrivesafe\wwwdrivesafe\obj\Debug\wwwdrivesafe.Migrations.addAndroidUserInfoTable.resources

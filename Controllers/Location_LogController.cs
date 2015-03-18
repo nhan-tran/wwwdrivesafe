@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Data.Entity;
+﻿using System.Data.Entity;
 using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using wwwdrivesafe.Models;
+using Microsoft.AspNet.Identity.Owin;
 
 namespace wwwdrivesafe.Controllers
 {
@@ -14,12 +12,32 @@ namespace wwwdrivesafe.Controllers
     public class Location_LogController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
+		private ApplicationUserManager _userManager;
+
+		public ApplicationUserManager UserManager
+		{
+			get
+			{
+				return _userManager ?? HttpContext.GetOwinContext().GetUserManager<ApplicationUserManager>();
+			}
+			private set
+			{
+				_userManager = value;
+			}
+		}
 
         // GET: Location_Log
         public ActionResult Index()
         {
-            
-			return View(db.Location_Logs.ToList());
+			
+			var user = UserManager.Users.First();
+
+			var viewUsers = db.ViewPermissions.Where(x => x.DsAccountId == user.Id).ToList();
+			var logRecords = db.Location_Logs.ToList();
+
+			var userRecords = logRecords.Where(log => viewUsers.Any(x => x.AndroidUserId == log.User_Id)).ToList();
+
+			return View(userRecords);
         }
 
         // GET: Location_Log/Details/5

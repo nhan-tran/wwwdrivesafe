@@ -212,8 +212,13 @@
     <Compile Include="Migrations\201503142113433_add_ViewPermission_model_Drop_Driver_model_DbSet.Designer.cs">
       <DependentUpon>201503142113433_add_ViewPermission_model_Drop_Driver_model_DbSet.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201503171938173_addAndroidUserInfoTable.cs" />
+    <Compile Include="Migrations\201503171938173_addAndroidUserInfoTable.Designer.cs">
+      <DependentUpon>201503171938173_addAndroidUserInfoTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\AndroidUserInfo.cs" />
     <Compile Include="Models\Driver.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Location_Log.cs" />
@@ -331,6 +336,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201503142113433_add_ViewPermission_model_Drop_Driver_model_DbSet.resx">
       <DependentUpon>201503142113433_add_ViewPermission_model_Drop_Driver_model_DbSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201503171938173_addAndroidUserInfoTable.resx">
+      <DependentUpon>201503171938173_addAndroidUserInfoTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
