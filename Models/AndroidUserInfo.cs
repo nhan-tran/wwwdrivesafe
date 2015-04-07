@@ -14,9 +14,9 @@ namespace wwwdrivesafe.Models
 		public int CreatedDate { get; set; }
 		public string Android_User_Id { get; set; }
 		public string Business_Id { get; set; }
-		public string Validation_Code { get; set; }
+		public string Membership_Id { get; set; }
+		public string Group_Id { get; set; }
 		public bool Active_User { get; set; }
 		public string NickName { get; set; }
-		// groupId in the future
 	}
 }
