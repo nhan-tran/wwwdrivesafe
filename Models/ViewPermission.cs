@@ -18,6 +18,8 @@ namespace wwwdrivesafe.Models
 
 		// list of drivers?
 		public string AndroidUserId { get; set; }
+
+		public int AndroidUserInfo { get; set; }
 		// list of groups? or list of groups can be derived from driver data
 	}
 }

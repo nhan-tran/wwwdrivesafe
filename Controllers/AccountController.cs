@@ -152,9 +152,18 @@ namespace wwwdrivesafe.Controllers
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Register(RegisterViewModel model)
         {
-            if (ModelState.IsValid)
+			ApplicationDbContext db = new ApplicationDbContext();
+			var validBusinessId = db.Businesses.Any(b => b.BusinessCode.Equals(model.BusinessCode, StringComparison.OrdinalIgnoreCase));
+			
+			if (!validBusinessId)
+			{
+				ModelState.AddModelError("BusinessCode", "Invalid Business Code");
+			}
+
+            if (ModelState.IsValid && validBusinessId)
             {
-                var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
+				var foundBusiness = db.Businesses.First(b => b.BusinessCode == model.BusinessCode);
+                var user = new ApplicationUser { UserName = model.Email, Email = model.Email, BusinessId = foundBusiness.ID };
                 var result = UserManager.Create(user, model.Password);
                 if (result.Succeeded)
                 {
