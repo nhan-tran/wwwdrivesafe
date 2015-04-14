@@ -32,6 +32,13 @@ namespace wwwdrivesafe.Models
 			return new ApplicationDbContext();
 		}
 
+		protected override void OnModelCreating(DbModelBuilder modelBuilder) 
+		{
+			// base.OnModelCreating(modelBuilder);
+			// http://stackoverflow.com/a/11799286/2403881
+			modelBuilder.Entity<AndroidUserInfo>().ToTable("AndroidUserInfo");
+			base.OnModelCreating(modelBuilder);
+		}
 
 		// add dbset here
 		public DbSet<Driver> Drivers { get; set; }

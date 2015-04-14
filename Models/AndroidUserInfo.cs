@@ -11,7 +11,7 @@ namespace wwwdrivesafe.Models
 		[Key]
 		public int ID { get; set; }
 
-		public int CreatedDate { get; set; }
+		public DateTime CreatedDate { get; set; }
 		public string Android_User_Id { get; set; }
 		public string Business_Id { get; set; }
 		public string Membership_Id { get; set; }

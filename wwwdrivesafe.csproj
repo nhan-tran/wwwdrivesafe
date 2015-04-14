@@ -175,6 +175,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AndroidUserInfoSyncController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\Location_LogController.cs" />
     <Compile Include="Controllers\Location_Log_Sync_Controller.cs" />
@@ -223,6 +224,14 @@
     <Compile Include="Migrations\201504070331411_BusinessModel.cs" />
     <Compile Include="Migrations\201504070331411_BusinessModel.Designer.cs">
       <DependentUpon>201504070331411_BusinessModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201504140221313_fix-for-AndroidUserInfo-table.cs" />
+    <Compile Include="Migrations\201504140221313_fix-for-AndroidUserInfo-table.Designer.cs">
+      <DependentUpon>201504140221313_fix-for-AndroidUserInfo-table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201504140246199_AdnroidUserInfo-createddate-fix.cs" />
+    <Compile Include="Migrations\201504140246199_AdnroidUserInfo-createddate-fix.Designer.cs">
+      <DependentUpon>201504140246199_AdnroidUserInfo-createddate-fix.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -354,6 +363,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201504070331411_BusinessModel.resx">
       <DependentUpon>201504070331411_BusinessModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201504140221313_fix-for-AndroidUserInfo-table.resx">
+      <DependentUpon>201504140221313_fix-for-AndroidUserInfo-table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201504140246199_AdnroidUserInfo-createddate-fix.resx">
+      <DependentUpon>201504140246199_AdnroidUserInfo-createddate-fix.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
