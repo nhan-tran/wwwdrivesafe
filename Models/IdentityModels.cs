@@ -47,5 +47,7 @@ namespace wwwdrivesafe.Models
 		public DbSet<ViewPermission> ViewPermissions { get; set; }
 		public DbSet<AndroidUserInfo> AndroidUserInfo { get; set; }
 		public DbSet<Business> Businesses { get; set; }
+		public DbSet<BusinessGroup> BusinessGroups { get; set; }
+		public DbSet<BusinessGroupAdmin> BusinessGroupAdmins { get; set; }
 	}
 }

@@ -234,10 +234,17 @@
     <Compile Include="Migrations\201504140246199_AdnroidUserInfo-createddate-fix.Designer.cs">
       <DependentUpon>201504140246199_AdnroidUserInfo-createddate-fix.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201504282320432_BusinessGroupModels.cs" />
+    <Compile Include="Migrations\201504282320432_BusinessGroupModels.Designer.cs">
+      <DependentUpon>201504282320432_BusinessGroupModels.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\AndroidUserInfo.cs" />
     <Compile Include="Models\Business.cs" />
+    <Compile Include="Models\BusinessGroup.cs" />
+    <Compile Include="Models\BusinessGroupAdmin.cs" />
+    <Compile Include="Models\DashboardViewModels.cs" />
     <Compile Include="Models\Driver.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Location_Log.cs" />
@@ -324,6 +331,7 @@
     <Content Include="Views\ViewPermissions\Edit.cshtml" />
     <Content Include="Views\ViewPermissions\Index.cshtml" />
     <Content Include="Views\Dashboard\Index.cshtml" />
+    <Content Include="Views\Dashboard\Manage.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -371,6 +379,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201504140246199_AdnroidUserInfo-createddate-fix.resx">
       <DependentUpon>201504140246199_AdnroidUserInfo-createddate-fix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201504282320432_BusinessGroupModels.resx">
+      <DependentUpon>201504282320432_BusinessGroupModels.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

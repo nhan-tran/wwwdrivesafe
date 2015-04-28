@@ -72,3 +72,4 @@ C:\Users\Nhan\Documents\Visual Studio 2013\Projects\wwwdrivesafe\wwwdrivesafe\ob
 C:\Users\Nhan\Documents\Visual Studio 2013\Projects\wwwdrivesafe\wwwdrivesafe\obj\Debug\wwwdrivesafe.csprojResolveAssemblyReference.cache
 C:\Users\Nhan\Documents\Visual Studio 2013\Projects\wwwdrivesafe\wwwdrivesafe\obj\Debug\wwwdrivesafe.Migrations.fixforAndroidUserInfotable.resources
 C:\Users\Nhan\Documents\Visual Studio 2013\Projects\wwwdrivesafe\wwwdrivesafe\obj\Debug\wwwdrivesafe.Migrations.AdnroidUserInfocreateddatefix.resources
+C:\Users\Nhan\Documents\Visual Studio 2013\Projects\wwwdrivesafe\wwwdrivesafe\obj\Debug\wwwdrivesafe.Migrations.BusinessGroupModels.resources

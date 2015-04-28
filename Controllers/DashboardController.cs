@@ -38,7 +38,40 @@ namespace wwwdrivesafe.Controllers
         }
 
 		[Authorize(Roles="SiteAdmin,BusinessAdmin,GroupAdmin")]
+		// This view is for the purpose of admins having the ability to manage group leaders and assign drivers to them
+		// Also to 'activate' web accounts... if a web account does not have any permissions and is not an admin then it can't do anything
 		public ActionResult Manage()
+		{
+			var model = new List<WebUser>();
+			var userId = User.Identity.GetUserId();
+			var currentUser = UserManager.Users.First(x => x.Id == userId);
+
+			// business admin manages all users under the business id
+			var subUsers = db.Users.Where(x => x.BusinessId == currentUser.BusinessId && x.Id != currentUser.Id).ToList();
+
+			// table of users should be Email | Group Admin | Active | Edit ?
+
+			foreach (var user in subUsers)
+			{
+				var webUser = new WebUser();
+
+				webUser.Email = user.Email;
+				webUser.Id = user.Id;
+
+				var userRoles = UserManager.GetRoles(user.Id);
+
+				foreach (var role in userRoles)
+				{
+					webUser.Roles += role + " ";
+				}
+
+				model.Add(webUser);
+			}
+
+			return View(model);
+		}
+
+		public ActionResult EditUser(string userId)
 		{
 
 
