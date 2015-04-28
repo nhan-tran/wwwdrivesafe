@@ -49,5 +49,6 @@ namespace wwwdrivesafe.Models
 		public DbSet<Business> Businesses { get; set; }
 		public DbSet<BusinessGroup> BusinessGroups { get; set; }
 		public DbSet<BusinessGroupAdmin> BusinessGroupAdmins { get; set; }
+		public DbSet<BusinessAdmin> BusinessAdmins { get; set; }
 	}
 }

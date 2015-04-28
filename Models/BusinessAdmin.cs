@@ -6,13 +6,13 @@ using System.Web;
 
 namespace wwwdrivesafe.Models
 {
-	public class BusinessGroup
+	public class BusinessAdmin
 	{
 		[Key]
 		public int ID { get; set; }
 
 		public int BusinessId { get; set; }
 
-		public string GroupId { get; set; }
+		public string UserId { get; set; }
 	}
 }

@@ -238,10 +238,15 @@
     <Compile Include="Migrations\201504282320432_BusinessGroupModels.Designer.cs">
       <DependentUpon>201504282320432_BusinessGroupModels.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201504282343597_BusinessAdminModel.cs" />
+    <Compile Include="Migrations\201504282343597_BusinessAdminModel.Designer.cs">
+      <DependentUpon>201504282343597_BusinessAdminModel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\AndroidUserInfo.cs" />
     <Compile Include="Models\Business.cs" />
+    <Compile Include="Models\BusinessAdmin.cs" />
     <Compile Include="Models\BusinessGroup.cs" />
     <Compile Include="Models\BusinessGroupAdmin.cs" />
     <Compile Include="Models\DashboardViewModels.cs" />
@@ -382,6 +387,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201504282320432_BusinessGroupModels.resx">
       <DependentUpon>201504282320432_BusinessGroupModels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201504282343597_BusinessAdminModel.resx">
+      <DependentUpon>201504282343597_BusinessAdminModel.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
