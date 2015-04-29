@@ -1,0 +1,41 @@
+﻿@model wwwdrivesafe.Models.WebUser
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using (Html.BeginForm()) {
+
+	<div class="edit-container" style="margin-top:50px">
+		@Html.HiddenFor(modelItem => Model.Id)
+
+		<div class="form-group">
+			@Html.LabelFor(modelItem => Model.Email)
+			<div >
+				@Html.DisplayFor(modelItem => Model.Email)
+			</div>
+		</div>
+		<div class="form-group">
+			@Html.LabelFor(modelItem => Model.GroupAdmin)
+			<div>
+				@Html.EditorFor(modelItem => Model.GroupAdmin)
+			</div>
+		</div>
+		<div class="form-group">
+			@Html.LabelFor(modelItem => Model.GroupId)
+			<div>
+				@Html.EditorFor(modelItem => Model.GroupId)
+			</div>
+		</div>
+		<div class="form-group">
+			@Html.LabelFor(modelItem => Model.BusinessAdmin)
+			<div>
+				@Html.EditorFor(modelItem => Model.BusinessAdmin)
+			</div>
+		</div>
+	</div>
+
+<p>
+	<input type="submit" value="Save" />
+</p>
+}

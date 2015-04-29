@@ -13,6 +13,7 @@ using Microsoft.Owin.Security;
 
 namespace wwwdrivesafe.Controllers
 {
+	[Authorize]
     public class DashboardController : Controller
     {
 		private ApplicationDbContext db = new ApplicationDbContext();
@@ -36,6 +37,12 @@ namespace wwwdrivesafe.Controllers
         {
             return View();
         }
+
+		public ActionResult ViewLog()
+		{
+			return RedirectToAction("Index", "Location_Log");
+		}
+
 
 		[Authorize(Roles="SiteAdmin,BusinessAdmin,GroupAdmin")]
 		// This view is for the purpose of admins having the ability to manage group leaders and assign drivers to them
@@ -73,9 +80,86 @@ namespace wwwdrivesafe.Controllers
 
 		public ActionResult EditUser(string userId)
 		{
+			var webUser = new WebUser();
 
+			var user = db.Users.FirstOrDefault(x => x.Id == userId);
 
-			return View();
+			webUser.Email = user.Email;
+			webUser.Id = user.Id;
+
+			var groupAdmin = db.BusinessGroupAdmins.FirstOrDefault(x => x.UserId == webUser.Id);
+
+			if (groupAdmin != null)
+			{
+				webUser.GroupAdmin = true;
+				webUser.GroupId = groupAdmin.GroupId;
+			}
+			else
+			{
+				webUser.GroupAdmin = false;
+			}
+
+			return View(webUser);
+		}
+
+		[HttpPost]
+		public ActionResult EditUser(WebUser webUser)
+		{
+			if (ModelState.IsValid)
+			{
+				var user = db.Users.FirstOrDefault(x => x.Id == webUser.Id);
+
+				var oldUser = new WebUser();
+				oldUser.Email = user.Email;
+				oldUser.Id = user.Id;
+
+				webUser.Email = user.Email;
+
+				var groupAdmin = db.BusinessGroupAdmins.FirstOrDefault(x => x.UserId == webUser.Id);
+
+				if (groupAdmin != null)
+				{
+					oldUser.GroupAdmin = true;
+					oldUser.GroupId = groupAdmin.GroupId;
+				}
+				else
+				{
+					oldUser.GroupAdmin = false;
+				}
+
+				bool adminChanged = (webUser.GroupAdmin != oldUser.GroupAdmin);
+				bool groupIdChanged = (webUser.GroupId != oldUser.GroupId);
+
+				if (adminChanged || groupIdChanged) {
+					// something changed... either remove or add a record
+					if (adminChanged)
+					{
+						if (webUser.GroupAdmin)
+						{
+							// new
+							var newGroupAdmin = new BusinessGroupAdmin();
+							newGroupAdmin.GroupId = webUser.GroupId;
+							newGroupAdmin.BusinessId = user.BusinessId;
+							newGroupAdmin.UserId = webUser.Id;
+
+							db.BusinessGroupAdmins.Add(newGroupAdmin);
+						}
+						else
+						{
+							// new was removed
+							db.BusinessGroupAdmins.Remove(groupAdmin);
+						}
+					}
+					else if (groupIdChanged)
+					{
+						// group changed so edit the groupid
+						groupAdmin.GroupId = webUser.GroupId;
+
+					}
+					db.SaveChanges();
+				}
+			}
+			return View(webUser);
 		}
     }
 }

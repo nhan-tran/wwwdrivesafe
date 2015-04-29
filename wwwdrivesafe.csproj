@@ -337,6 +337,7 @@
     <Content Include="Views\ViewPermissions\Index.cshtml" />
     <Content Include="Views\Dashboard\Index.cshtml" />
     <Content Include="Views\Dashboard\Manage.cshtml" />
+    <Content Include="Views\Dashboard\EditUser.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

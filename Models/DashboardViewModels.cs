@@ -15,5 +15,8 @@ namespace wwwdrivesafe.Models
 		public string Roles { get; set; }
 		public string Status { get; set; }
 		public string Id { get; set; }
+		public bool GroupAdmin { get; set; }
+		public bool BusinessAdmin { get; set; }
+		public string GroupId { get; set; }
 	}
 }
