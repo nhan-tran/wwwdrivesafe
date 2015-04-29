@@ -10,6 +10,10 @@ namespace wwwdrivesafe.Controllers
 	{
 		public ActionResult Index()
 		{
+			if (User.Identity.IsAuthenticated)
+			{
+				return Redirect("/dashboard");
+			}
 			return View();
 		}
 

@@ -37,7 +37,7 @@ namespace wwwdrivesafe.Controllers
 
 			var userRecords = logRecords.Where(log => viewUsers.Any(x => x.AndroidUserId == log.User_Id)).ToList();
 
-			return View(userRecords);
+			return View(logRecords);
         }
 
         // GET: Location_Log/Details/5
