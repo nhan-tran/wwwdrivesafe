@@ -15,7 +15,8 @@ namespace wwwdrivesafe.Models
 		public double Latitude { get; set; }
 		public double Longitude { get; set; }
 		public string Location_Time { get; set; }
-		public string User_Id { get; set; }
+		public string Android_Id { get; set; }
+		public string Membership_Id { get; set; }
 		public bool Synced { get; set; }
 		public double Bearing { get; set; }
 		public double Accuracy { get; set; }

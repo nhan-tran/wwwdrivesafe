@@ -30,12 +30,12 @@ namespace wwwdrivesafe.Controllers
         public ActionResult Index()
         {
 			
-			var user = UserManager.Users.First();
+			//var user = UserManager.Users.First();
 
-			var viewUsers = db.ViewPermissions.Where(x => x.DsAccountId == user.Id).ToList();
+			//var viewUsers = db.ViewPermissions.Where(x => x.DsAccountId == user.Id).ToList();
 			var logRecords = db.Location_Logs.ToList();
 
-			var userRecords = logRecords.Where(log => viewUsers.Any(x => x.AndroidUserId == log.User_Id)).ToList();
+			//var userRecords = logRecords.Where(log => viewUsers.Any(x => x.AndroidUserId == log.User_Id)).ToList();
 
 			return View(logRecords);
         }

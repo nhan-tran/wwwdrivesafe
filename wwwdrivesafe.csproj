@@ -244,6 +244,10 @@
     <Compile Include="Migrations\201504282343597_BusinessAdminModel.Designer.cs">
       <DependentUpon>201504282343597_BusinessAdminModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201504300808076_android_user_and_membership_id.cs" />
+    <Compile Include="Migrations\201504300808076_android_user_and_membership_id.Designer.cs">
+      <DependentUpon>201504300808076_android_user_and_membership_id.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\AndroidUserInfo.cs" />
@@ -395,6 +399,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201504282343597_BusinessAdminModel.resx">
       <DependentUpon>201504282343597_BusinessAdminModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201504300808076_android_user_and_membership_id.resx">
+      <DependentUpon>201504300808076_android_user_and_membership_id.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
