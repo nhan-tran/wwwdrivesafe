@@ -16,7 +16,7 @@ namespace wwwdrivesafe.Models
 		public string Business_Id { get; set; }
 		public string Membership_Id { get; set; }
 		public string Group_Id { get; set; }
-		public bool Active_User { get; set; }
+		public int Active_User { get; set; }
 		public string NickName { get; set; }
 	}
 }
