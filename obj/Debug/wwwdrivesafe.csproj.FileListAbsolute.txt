@@ -56,7 +56,6 @@ C:\Users\Nhan\Documents\Visual Studio 2013\Projects\wwwdrivesafe\wwwdrivesafe\bi
 C:\Users\Nhan\Documents\Visual Studio 2013\Projects\wwwdrivesafe\wwwdrivesafe\bin\Microsoft.Owin.Security.Google.xml
 C:\Users\Nhan\Documents\Visual Studio 2013\Projects\wwwdrivesafe\wwwdrivesafe\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\Nhan\Documents\Visual Studio 2013\Projects\wwwdrivesafe\wwwdrivesafe\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\Users\Nhan\Documents\Visual Studio 2013\Projects\wwwdrivesafe\wwwdrivesafe\obj\Debug\wwwdrivesafe.csprojResolveAssemblyReference.cache
 C:\Users\Nhan\Documents\Visual Studio 2013\Projects\wwwdrivesafe\wwwdrivesafe\obj\Debug\wwwdrivesafe.Migrations.InitialCreate.resources
 C:\Users\Nhan\Documents\Visual Studio 2013\Projects\wwwdrivesafe\wwwdrivesafe\obj\Debug\wwwdrivesafe.Migrations.initial_models.resources
 C:\Users\Nhan\Documents\Visual Studio 2013\Projects\wwwdrivesafe\wwwdrivesafe\obj\Debug\wwwdrivesafe.Migrations.changeLocationLogToBeSameAsAndroid.resources

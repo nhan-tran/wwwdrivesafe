@@ -94,7 +94,6 @@ namespace wwwdrivesafe.Controllers
             {
                 return NotFound();
             }
-			bool x = true;
             db.AndroidUserInfo.Remove(androidUserInfo);
             db.SaveChanges();
 
