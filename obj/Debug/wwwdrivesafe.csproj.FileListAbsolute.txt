@@ -75,3 +75,4 @@ C:\Users\Nhan\Documents\Visual Studio 2013\Projects\wwwdrivesafe\wwwdrivesafe\ob
 C:\Users\Nhan\Documents\Visual Studio 2013\Projects\wwwdrivesafe\wwwdrivesafe\obj\Debug\wwwdrivesafe.pdb
 C:\Users\Nhan\Documents\Visual Studio 2013\Projects\wwwdrivesafe\wwwdrivesafe\obj\Debug\wwwdrivesafe.Migrations.android_user_and_membership_id.resources
 C:\Users\Nhan\Documents\Visual Studio 2013\Projects\wwwdrivesafe\wwwdrivesafe\obj\Debug\wwwdrivesafe.Migrations.activeusertoint.resources
+C:\Users\Nhan\Documents\Visual Studio 2013\Projects\wwwdrivesafe\wwwdrivesafe\obj\Debug\wwwdrivesafe.csprojResolveAssemblyReference.cache

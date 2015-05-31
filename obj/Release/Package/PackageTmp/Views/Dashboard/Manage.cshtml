@@ -1,0 +1,50 @@
+﻿@model IEnumerable<wwwdrivesafe.Models.WebUser>
+
+@{
+    ViewBag.Title = "Manage";
+}
+
+<style>
+	td {
+		width:200px;
+	}
+</style>
+
+<h2>Manage</h2>
+
+<h3>Web Users</h3>
+
+<table>
+	<thead>
+		<tr>
+			<th>
+				Email
+			</th>
+			<th>
+				Role
+			</th>
+			<th>
+				
+			</th>
+		</tr>
+	</thead>
+	<tbody>
+		@foreach (var item in Model)
+		{
+			<tr>
+				<td>
+					@Html.DisplayFor(modelItem => item.Email)
+				</td>
+				
+				<td>
+					@Html.DisplayFor(modelItem => item.Roles)
+				</td>
+
+				<td>
+					@Html.ActionLink("Edit", "EditUser", new { @userId = item.Id })
+				</td>
+			</tr>
+		}
+	</tbody>
+</table>
+
