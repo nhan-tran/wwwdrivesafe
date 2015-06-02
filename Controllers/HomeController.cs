@@ -19,7 +19,7 @@ namespace wwwdrivesafe.Controllers
 
 		public ActionResult About()
 		{
-			ViewBag.Message = "Your application description page.";
+			ViewBag.Message = "What is Drive Safe?";
 
 			return View();
 		}
